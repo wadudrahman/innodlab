@@ -1,0 +1,31 @@
+version: '3'
+
+networks:
+  innodlab:
+
+services:
+  nginx:
+    image: nginx:stable-alpine
+    container_name: innodlab_nginx
+    ports:
+      - "16001:80"
+    volumes:
+      - ./src:/var/www/html
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php
+      - mysql
+    networks:
+      - innodlab
+
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: innodlab_php
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - "16002:9000"
+    networks:
+      - innodlab
