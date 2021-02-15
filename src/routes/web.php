@@ -19,4 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/login', [AuthController::class, 'showLoginView']);
+Route::post('/login', [AuthController::class, 'login']);
+Route::get('/password/reset', [AuthController::class, 'showResetPassword']);
+Route::post('/password/reset', [AuthController::class, 'resetPassword']);
 Route::get('/packages', [AuthController::class, 'showPackagesView']);
