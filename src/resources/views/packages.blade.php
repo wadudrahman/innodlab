@@ -51,44 +51,23 @@
 <div class="page-loader">
     <div class="bg-primary"></div>
 </div>
-
 <!-- Content -->
-
 <div class="layout-wrapper layout-2">
     <div class="layout-inner">
-
         <!-- Layout container -->
         <div class="layout-container">
-
             <!-- Layout content -->
             <div class="layout-content">
-
                 <!-- Content -->
                 <div class="container-fluid flex-grow-1 container-p-y">
-
                     <div class="container px-0">
-
                         <h1 class="text-center font-weight-bolder pt-5 mb-3">
                             Pricing plans
                         </h1>
                         <div class="text-center text-muted text-large font-weight-light">
                             Choose the best plan that fits your needs
-                        </div>
-
-                        <div class="d-flex align-items-center my-5">
-                            <div class="flex-shrink-1 w-100 text-right text-big mr-3">Billed monthly</div>
-                            <label class="switcher switcher-lg switcher-success m-0">
-                                <input type="checkbox" class="switcher-input" checked="">
-                                <span class="switcher-indicator">
-                    <span class="switcher-yes"></span>
-                    <span class="switcher-no"></span>
-                  </span>
-                            </label>
-                            <div class="flex-shrink-1 w-100 text-success text-big ml-3">Billed annually - Save 20%</div>
-                        </div>
-
+                        </div><br>
                         <div class="row no-gutters row-bordered ui-bordered text-center">
-
                             <div class="d-flex col-md flex-column py-4">
                                 <div class="display-1 text-primary my-4"><i class="lnr lnr-rocket text-big"></i>
                                 </div>
@@ -113,10 +92,9 @@
                                         Started</a>
                                 </div>
                             </div>
-
                             <div class="d-flex col-md flex-column py-4">
                                 <div class="display-1 text-primary my-4"><i class="lnr lnr-briefcase text-big"></i></div>
-                                <h5 class="m-0">Small Buisness</h5>
+                                <h5 class="m-0">Basic</h5>
                                 <div class="flex-grow-1">
                                     <div class="py-4 my-2">
                                         <span class="d-inline-block text-muted text-big align-middle mr-2">$</span>
@@ -134,11 +112,10 @@
                                         Started</a>
                                 </div>
                             </div>
-
                             <div class="d-flex col-md flex-column py-4">
                                 <div class="display-1 text-primary my-4"><i class="lnr lnr-diamond text-big"></i>
                                 </div>
-                                <h5 class="m-0">Enterprise</h5>
+                                <h5 class="m-0">Premium</h5>
                                 <div class="flex-grow-1">
                                     <div class="py-4 my-2">
                                         <span class="d-inline-block text-muted text-big align-middle mr-2">$</span>
@@ -157,9 +134,9 @@
                                 </div>
                             </div>
                             <div class="d-flex col-md flex-column py-4">
-                                <div class="display-1 text-primary my-4"><i class="lnr lnr-apartment text-big"></i>
+                                <div class="display-1 text-primary my-4"><i class="lnr lnr-hourglass text-big"></i>
                                 </div>
-                                <h5 class="m-0">Enterprise</h5>
+                                <h5 class="m-0">Pay As You GO</h5>
                                 <div class="flex-grow-1">
                                     <div class="py-4 my-2">
                                         <span class="d-inline-block text-muted text-big align-middle mr-2">$</span>
@@ -177,45 +154,18 @@
                                         Started</a>
                                 </div>
                             </div>
-
-                            <div class="d-flex col-md flex-column py-4">
-                                <div class="display-1 text-primary my-4"><i class="lnr lnr-apartment text-big"></i></div>
-                                <h5 class="m-0">Enterprise</h5>
-                                <div class="flex-grow-1">
-                                    <div class="py-4 my-2">
-                                        <span class="d-inline-block text-muted text-big align-middle mr-2">$</span>
-                                        <span class="display-3 d-inline-block font-weight-bold align-middle">50</span>
-                                        <span class="d-inline-block text-muted text-big align-middle ml-2">/ mo</span>
-                                    </div>
-                                    <div class="pb-5">
-                                        <p class="ui-company-text mb-2">Unlimited users</p>
-                                        <p class="ui-company-text mb-2">Unlimited projects</p>
-                                        <p class="ui-company-text mb-0">1000GB space</p>
-                                    </div>
-                                </div>
-                                <div class="px-md-3 px-lg-5">
-                                    <a href="javascript:void(0)" class="btn btn-outline-primary btn-lg rounded-pill">Get Started</a>
-                                </div>
-                            </div>
-
                         </div>
-
                         <div class="text-center text-big mt-5">
                             <a href="javascript:void(0)">I want to Join as a Designer</a>
                         </div>
                     </div>
-
                 </div>
                 <!-- / Content -->
-
             </div>
             <!-- Layout content -->
-
         </div>
         <!-- / Layout container -->
-
     </div>
-
     <!-- Overlay -->
     <div class="layout-overlay layout-sidenav-toggle"></div>
 </div>
