@@ -15,4 +15,11 @@ class AuthController extends Controller
     {
         return view('packages');
     }
+
+    public function showRegistrationOptionsView()
+    {
+        $userRoles = null;
+
+        return view('registrationOptions', compact('userRoles'));
+    }
 }

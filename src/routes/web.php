@@ -20,3 +20,5 @@ Route::get('/', function () {
 
 Route::get('/login', [AuthController::class, 'showLoginView']);
 Route::get('/packages', [AuthController::class, 'showPackagesView']);
+Route::get('/register', [AuthController::class, 'showRegistrationOptionsView']);
+Route::get('/register/{userRoleId}', [AuthController::class, 'showPackagesView']);

@@ -156,7 +156,7 @@
                             </div>
                         </div>
                         <div class="text-center text-big mt-5">
-                            <a href="javascript:void(0)">I want to Join as a Designer</a>
+                            <a href="javascript:void(0)">Join as Designer Or Affiliate</a>
                         </div>
                     </div>
                 </div>
