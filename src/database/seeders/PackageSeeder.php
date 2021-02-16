@@ -22,7 +22,8 @@ class PackageSeeder extends Seeder
                 'file_stored_day_count' => 30,
                 'trial_period_day_count' => 7,
                 'trial_period_design_count' => 20,
-                'price_per_design' => 50
+                'price_per_design' => 50,
+                'icon_class' => 'lnr lnr-rocket text-big'
             ],
             [
                 'title' => 'Basic',
@@ -31,7 +32,8 @@ class PackageSeeder extends Seeder
                 'file_stored_day_count' => 45,
                 'trial_period_day_count' => 7,
                 'trial_period_design_count' => 20,
-                'price_per_design' => 40
+                'price_per_design' => 40,
+                'icon_class' => 'lnr lnr-briefcase text-big'
             ],
             [
                 'title' => 'Premium',
@@ -40,14 +42,16 @@ class PackageSeeder extends Seeder
                 'file_stored_day_count' => 50,
                 'trial_period_day_count' => 7,
                 'trial_period_design_count' => 20,
-                'price_per_design' => 30
+                'price_per_design' => 30,
+                'icon_class' => 'lnr lnr-diamond text-big'
             ],
             [
                 'title' => 'Pay As You Go',
                 'design_count' => -1,
                 'addon_email_count' => 15,
                 'file_stored_day_count' => 30,
-                'price_per_design' => 50
+                'price_per_design' => 50,
+                'icon_class' => 'lnr lnr-hourglass text-big'
             ],
         ];
 

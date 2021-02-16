@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class UserRoleSeeder extends Seeder
 {
@@ -13,38 +15,34 @@ class UserRoleSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('user_roles')->insert(
+        $userRoles = [
             [
                 'name' => 'Admin',
                 'slug' => Str::slug('Admin')
-            ]
-        );
-        DB::table('user_roles')->insert(
+            ],
             [
                 'name' => 'Moderator',
                 'slug' => Str::slug('Moderator')
-            ]
-        );
-        DB::table('user_roles')->insert(
+            ],
             [
                 'name' => 'Client',
                 'slug' => Str::slug('Client'),
                 'is_open_registration' => 'true'
-            ]
-        );
-        DB::table('user_roles')->insert(
+            ],
             [
                 'name' => 'Designer',
                 'slug' => Str::slug('Designer'),
                 'is_open_registration' => 'true'
-            ]
-        );
-        DB::table('user_roles')->insert(
+            ],
             [
                 'name' => 'Affiliate',
                 'slug' => Str::slug('Affiliate'),
                 'is_open_registration' => 'true'
             ]
-        );
+        ];
+
+        if (DB::table('user_roles')->get()->count() <= 0) {
+            DB::table('user_roles')->insert($userRoles);
+        }
     }
 }

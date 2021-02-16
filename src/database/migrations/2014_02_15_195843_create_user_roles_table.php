@@ -18,11 +18,11 @@ class CreateUserRolesTable extends Migration
                 $table->id();
                 $table->string('name')->unique();
                 $table->string('slug')->nullable();
+                $table->boolean('is_open_registration')->default(false);
                 $table->integer('created_by')->default(0);
                 $table->timestamp('created_at')->useCurrent();
                 $table->integer('updated_by')->default(0);
                 $table->timestamp('updated_at')->useCurrent();
-                $table->boolean('is_open_registration')->default(false);
             });
         }
     }

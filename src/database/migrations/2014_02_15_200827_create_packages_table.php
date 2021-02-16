@@ -28,6 +28,7 @@ class CreatePackagesTable extends Migration
                 $table->float('price_per_design', 8, 2)->default(0.00);
                 $table->boolean('is_active')->default(true);
                 $table->boolean('is_displayed')->default(true);
+                $table->string('icon_class')->nullable();
                 $table->timestamp('created_by')->default(0);
                 $table->timestamp('created_at')->useCurrent();
                 $table->timestamp('updated_by')->nullable();
