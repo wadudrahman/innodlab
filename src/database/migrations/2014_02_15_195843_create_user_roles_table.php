@@ -22,6 +22,7 @@ class CreateUserRolesTable extends Migration
                 $table->timestamp('created_at')->useCurrent();
                 $table->integer('updated_by')->default(0);
                 $table->timestamp('updated_at')->useCurrent();
+                $table->boolean('is_open_registration')->default(false);
             });
         }
     }

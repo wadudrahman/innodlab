@@ -28,19 +28,22 @@ class UserRoleSeeder extends Seeder
         DB::table('user_roles')->insert(
             [
                 'name' => 'Client',
-                'slug' => Str::slug('Client')
+                'slug' => Str::slug('Client'),
+                'is_open_registration' => 'true'
             ]
         );
         DB::table('user_roles')->insert(
             [
                 'name' => 'Designer',
-                'slug' => Str::slug('Designer')
+                'slug' => Str::slug('Designer'),
+                'is_open_registration' => 'true'
             ]
         );
         DB::table('user_roles')->insert(
             [
                 'name' => 'Affiliate',
-                'slug' => Str::slug('Affiliate')
+                'slug' => Str::slug('Affiliate'),
+                'is_open_registration' => 'true'
             ]
         );
     }
