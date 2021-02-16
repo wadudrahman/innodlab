@@ -35,9 +35,9 @@ class CreateUsersTable extends Migration
                 $table->integer('design_count')->default(0);
                 $table->boolean('is_active')->default(true);
                 $table->boolean('is_paid')->default(false);
-                $table->timestamp('created_by')->default(0);
+                $table->integer('created_by')->default(0);
                 $table->timestamp('created_at')->useCurrent();
-                $table->timestamp('updated_by')->nullable();
+                $table->integer('updated_by')->nullable();
                 $table->timestamp('updated_at')->useCurrent();
             });
         }

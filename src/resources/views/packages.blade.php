@@ -92,69 +92,6 @@
                                         Started</a>
                                 </div>
                             </div>
-                            <div class="d-flex col-md flex-column py-4">
-                                <div class="display-1 text-primary my-4"><i class="lnr lnr-briefcase text-big"></i></div>
-                                <h5 class="m-0">Basic</h5>
-                                <div class="flex-grow-1">
-                                    <div class="py-4 my-2">
-                                        <span class="d-inline-block text-muted text-big align-middle mr-2">$</span>
-                                        <span class="display-3 d-inline-block font-weight-bold align-middle">20</span>
-                                        <span class="d-inline-block text-muted text-big align-middle ml-2">/ mo</span>
-                                    </div>
-                                    <div class="pb-5">
-                                        <p class="ui-company-text mb-2">20 users</p>
-                                        <p class="ui-company-text mb-2">100 projects</p>
-                                        <p class="ui-company-text mb-0">300GB space</p>
-                                    </div>
-                                </div>
-                                <div class="px-md-3 px-lg-5">
-                                    <a href="javascript:void(0)" class="btn btn-primary btn-lg rounded-pill">Get
-                                        Started</a>
-                                </div>
-                            </div>
-                            <div class="d-flex col-md flex-column py-4">
-                                <div class="display-1 text-primary my-4"><i class="lnr lnr-diamond text-big"></i>
-                                </div>
-                                <h5 class="m-0">Premium</h5>
-                                <div class="flex-grow-1">
-                                    <div class="py-4 my-2">
-                                        <span class="d-inline-block text-muted text-big align-middle mr-2">$</span>
-                                        <span class="display-3 d-inline-block font-weight-bold align-middle">50</span>
-                                        <span class="d-inline-block text-muted text-big align-middle ml-2">/ mo</span>
-                                    </div>
-                                    <div class="pb-5">
-                                        <p class="ui-company-text mb-2">Unlimited users</p>
-                                        <p class="ui-company-text mb-2">Unlimited projects</p>
-                                        <p class="ui-company-text mb-0">1000GB space</p>
-                                    </div>
-                                </div>
-                                <div class="px-md-3 px-lg-5">
-                                    <a href="javascript:void(0)" class="btn btn-outline-primary btn-lg rounded-pill">Get
-                                        Started</a>
-                                </div>
-                            </div>
-                            <div class="d-flex col-md flex-column py-4">
-                                <div class="display-1 text-primary my-4"><i class="lnr lnr-hourglass text-big"></i>
-                                </div>
-                                <h5 class="m-0">Pay As You GO</h5>
-                                <div class="flex-grow-1">
-                                    <div class="py-4 my-2">
-                                        <span class="d-inline-block text-muted text-big align-middle mr-2">$</span>
-                                        <span class="display-3 d-inline-block font-weight-bold align-middle">50</span>
-                                        <span class="d-inline-block text-muted text-big align-middle ml-2">/ mo</span>
-                                    </div>
-                                    <div class="pb-5">
-                                        <p class="ui-company-text mb-2">Unlimited users</p>
-                                        <p class="ui-company-text mb-2">Unlimited projects</p>
-                                        <p class="ui-company-text mb-0">1000GB space</p>
-                                    </div>
-                                </div>
-                                <div class="px-md-3 px-lg-5">
-                                    <a href="javascript:void(0)" class="btn btn-outline-primary btn-lg rounded-pill">Get
-                                        Started</a>
-                                </div>
-                            </div>
-                        </div>
                         <div class="text-center text-big mt-5">
                             <a href="javascript:void(0)">Join as Designer Or Affiliate</a>
                         </div>

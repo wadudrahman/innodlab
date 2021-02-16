@@ -18,26 +18,29 @@ class UserRoleSeeder extends Seeder
         $userRoles = [
             [
                 'name' => 'Admin',
-                'slug' => Str::slug('Admin')
+                'slug' => Str::slug('Admin'),
+                'is_open_registration' => false
             ],
             [
                 'name' => 'Moderator',
-                'slug' => Str::slug('Moderator')
+                'slug' => Str::slug('Moderator'),
+                'is_open_registration' => false
+
             ],
             [
                 'name' => 'Client',
                 'slug' => Str::slug('Client'),
-                'is_open_registration' => 'true'
+                'is_open_registration' => true
             ],
             [
                 'name' => 'Designer',
                 'slug' => Str::slug('Designer'),
-                'is_open_registration' => 'true'
+                'is_open_registration' => true
             ],
             [
                 'name' => 'Affiliate',
                 'slug' => Str::slug('Affiliate'),
-                'is_open_registration' => 'true'
+                'is_open_registration' => true
             ]
         ];
 

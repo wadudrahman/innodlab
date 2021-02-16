@@ -75,6 +75,8 @@ class AuthController extends Controller
 
     public function showPackagesView()
     {
+
+
         return view('packages');
     }
 
