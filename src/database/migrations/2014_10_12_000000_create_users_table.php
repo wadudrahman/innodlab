@@ -29,6 +29,12 @@ class CreateUsersTable extends Migration
                 $table->string('gender')->nullable();
                 $table->string('portfolio_link')->nullable();
                 $table->string('image')->nullable();
+                $table->integer('role_id');
+                $table->integer('package_id')->nullable();
+                $table->boolean('is_trial')->default(true);
+                $table->integer('design_count')->default(0);
+                $table->boolean('is_active')->default(true);
+                $table->boolean('is_paid')->default(false);
                 $table->timestamp('created_by')->default(0);
                 $table->timestamp('created_at')->useCurrent();
                 $table->timestamp('updated_by')->nullable();
