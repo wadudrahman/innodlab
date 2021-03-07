@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,3 +26,4 @@ Route::post('/password/reset', [AuthController::class, 'resetPassword']);
 Route::get('/packages', [AuthController::class, 'showPackagesView']);
 Route::get('/register', [AuthController::class, 'showRegistrationOptionsView']);
 Route::get('/register/{userRoleId}', [AuthController::class, 'showPackagesView']);
+Route::get('/dashboard', [DashboardController::class, 'showDashboardView']);
