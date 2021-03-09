@@ -10,4 +10,9 @@ class JobController extends Controller
     {
         return view('jobCategoriesManagement');
     }
+
+    public function showAddJobView()
+    {
+        return view('addJob');
+    }
 }

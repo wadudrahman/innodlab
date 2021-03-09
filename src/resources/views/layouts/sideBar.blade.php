@@ -54,7 +54,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Pages.Auth.Login.html">
+                    <a href="{{ url('/addJob') }}">
                         <i class="simple-icon-plus"></i> <span
                             class="d-inline-block">Add Job</span>
                     </a>
