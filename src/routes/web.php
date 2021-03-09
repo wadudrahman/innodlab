@@ -1,7 +1,10 @@
 <?php
 
-use App\Http\Controllers\AuthController;
-use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\{
+    AuthController,
+    DashboardController,
+    JobController
+};
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,4 +29,7 @@ Route::post('/password/reset', [AuthController::class, 'resetPassword']);
 Route::get('/packages', [AuthController::class, 'showPackagesView']);
 Route::get('/register', [AuthController::class, 'showRegistrationOptionsView']);
 Route::get('/register/{userRoleId}', [AuthController::class, 'showPackagesView']);
+
 Route::get('/dashboard', [DashboardController::class, 'showDashboardView']);
+Route::get('/jobCategories', [JobController::class, 'showJobCategoryManagementView']);
+Route::get('/addJob', [JobController::class, 'showAddJobView']);

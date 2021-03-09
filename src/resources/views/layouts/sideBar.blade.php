@@ -48,6 +48,12 @@
         <div class="scroll">
             <ul class="list-unstyled" data-link="jobManagement" id="jobManagement">
                 <li>
+                    <a href="{{ url('/jobCategories') }}">
+                        <i class="simple-icon-plus"></i> <span
+                            class="d-inline-block">Categories Management</span>
+                    </a>
+                </li>
+                <li>
                     <a href="Pages.Auth.Login.html">
                         <i class="simple-icon-plus"></i> <span
                             class="d-inline-block">Add Job</span>
