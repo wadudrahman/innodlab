@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="{{ asset('css/vendor/bootstrap-datepicker3.min.css') }}"/>
     <link rel="stylesheet" href="{{ asset('css/vendor/component-custom-switch.min.css') }}"/>
     <link rel="stylesheet" href="{{ asset('css/main.css') }}"/>
+    @stack('after_styles')
 </head>
 
 <body id="app-container" class="menu-default show-spinner">
@@ -54,6 +55,7 @@
         $('.alert-dismissible').fadeOut(1000);
     }, 5000);
 </script>
+@stack('scripts')
 </body>
 
 </html>
