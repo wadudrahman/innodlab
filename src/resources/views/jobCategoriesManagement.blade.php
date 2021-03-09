@@ -30,9 +30,9 @@
 
                             <form method="post" action="{{ url('') }}">
                                 <div class="form-group">
-                                    <label for="categoryName">Category name</label>
+                                    <label for="categoryName">Title</label>
                                     <input type="text" class="form-control" id="categoryName" name="categoryName"
-                                           placeholder="Enter Category">
+                                           placeholder="Enter Category name">
                                     <small id="emailHelp" class="form-text text-muted">We'll never share your email
                                         with anyone else.</small>
                                 </div>
@@ -55,9 +55,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="justify-content-center">
-                                    <button type="submit" class="btn btn-primary mb-0">Submit</button>
+                                <div class="row text-center">
+                                    <div class="col-sm-12">
+                                        <button type="submit" class="btn btn-primary mb-0">Submit</button>
+                                    </div>
                                 </div>
+
 
                             </form>
 
@@ -67,14 +70,15 @@
                 <div class="col-lg-6 col-md-12 mb-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Bordered Table</h5>
+                            <h5 class="card-title">Enlisted Job Categories</h5>
                             <table class="table table-bordered">
                                 <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Priority</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
