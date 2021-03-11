@@ -28,37 +28,64 @@
                         <div class="card-body">
                             <h5 class="card-title">Add New Category</h5>
 
-                                <form>
-                                    <div class="form-group"><label for="exampleInputEmail1">Email address</label> <input
-                                            type="email" class="form-control" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp" placeholder="Enter email"> <small
-                                            id="emailHelp" class="form-text text-muted">We'll never share your email
-                                            with anyone else.</small></div>
-                                    <div class="form-group"><label for="exampleInputPassword1">Password</label> <input
-                                            type="password" class="form-control" id="exampleInputPassword1"
-                                            placeholder="Password"></div>
-                                    <div class="custom-control custom-checkbox mb-3"><input type="checkbox"
-                                                                                            class="custom-control-input"
-                                                                                            id="customCheck1"> <label
-                                            class="custom-control-label" for="customCheck1">Check this custom
-                                            checkbox</label></div>
-                                    <button type="submit" class="btn btn-primary mb-0">Submit</button>
-                                </form>
+                            <form method="post" action="{{ url('') }}">
+                                <div class="form-group">
+                                    <label for="categoryName">Title</label>
+                                    <input type="text" class="form-control" id="categoryName" name="categoryName"
+                                           placeholder="Enter Category name">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email
+                                        with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label for="priority">Priority</label>
+                                            <div class="form-group mb-3">
+                                                <input type="number" class="form-control" id="priority" name="priority">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="status">Status</label>
+                                            <div class="form-group mb-3">
+                                                <select class="form-control" id="status" name="status">
+                                                    <option selected>Active</option>
+                                                    <option value="1">Inactive</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col-sm-12">
+                                        <button type="submit" class="btn btn-primary mb-0">Submit</button>
+                                    </div>
+                                </div>
+
+
+                            </form>
 
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 mb-4">
+
+                {{--<div class="col-lg-6 col-md-12 mb-4">
+
+                </div>--}}
+            </div>
+
+            <div class="row">
+                <div class="col-12">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Bordered Table</h5>
+                            <h5 class="card-title">Enlisted Job Categories</h5>
                             <table class="table table-bordered">
                                 <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Priority</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
