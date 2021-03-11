@@ -60,7 +60,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Pages.Auth.Login.html">
+                    <a href="{{ url('/jobs') }}">
                         <i class="simple-icon-list"></i> <span
                             class="d-inline-block">Job List</span>
                     </a>
