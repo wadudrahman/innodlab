@@ -68,11 +68,19 @@
                     </div>
                 </div>
 
-                {{--<div class="col-lg-6 col-md-12 mb-4">
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                                <div class="card-body text-center">
+                                    <i class="iconsminds-clock"></i>
+                                    <p class="card-text font-weight-semibold mb-0">Pending Orders</p>
+                                    <p class="lead text-center">16</p>
+                                </div>
+                        </div>
+                    </div>
 
-                </div>--}}
+                </div>
             </div>
-
             <div class="row">
                 <div class="col-12">
                     <div class="card">
@@ -113,6 +121,7 @@
                 </div>
             </div>
         </div>
+
     </main>
 @endsection
 @push('scripts')
