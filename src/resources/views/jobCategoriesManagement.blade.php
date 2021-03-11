@@ -67,7 +67,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 mb-4">
+
+                {{--<div class="col-lg-6 col-md-12 mb-4">
+
+                </div>--}}
+            </div>
+
+            <div class="row">
+                <div class="col-12">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Enlisted Job Categories</h5>
