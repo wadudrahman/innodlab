@@ -33,3 +33,5 @@ Route::get('/register/{userRoleId}', [AuthController::class, 'showPackagesView']
 Route::get('/dashboard', [DashboardController::class, 'showDashboardView']);
 Route::get('/jobCategories', [JobController::class, 'showJobCategoryManagementView']);
 Route::get('/addJob', [JobController::class, 'showAddJobView']);
+Route::get('/jobs', [JobController::class, 'showJobListView']);
+Route::get('/jobDetails/{jobId}', [JobController::class, 'showJobDetails']);

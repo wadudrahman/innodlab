@@ -15,4 +15,14 @@ class JobController extends Controller
     {
         return view('addJob');
     }
+
+    public function showJobListView()
+    {
+        return view('jobList');
+    }
+
+    public function showJobDetails($jobId)
+    {
+        return view('jobDetails');
+    }
 }
