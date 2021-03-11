@@ -1,10 +1,6 @@
 <?php
 
-use App\Http\Controllers\{
-    AuthController,
-    DashboardController,
-    JobController
-};
+use App\Http\Controllers\{AuthController, DashboardController, JobController, UserController};
 use Illuminate\Support\Facades\Route;
 
 /*

@@ -24,15 +24,19 @@
                     <div class="separator mb-5"></div>
                 </div>
 
-                    <div class="col-lg-3 col-md-12 mb-4">
-                        <div class="card">
-                            <div class="search" data-search-path="Pages.Search.html?q=">
-                                <input placeholder="Search...">
-                                <span
-                                    class="search-icon"><i class="simple-icon-magnifier"></i></span>
-                            </div>
+                <div class="col-sm-4 offset-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control"
+                               name="query" id="query"
+                               placeholder="Start typing something to search..."
+                               data-provide="typeahead" autocomplete="off">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-primary default"><i class="simple-icon-magnifier"></i>
+                            </button>
                         </div>
                     </div>
+                    <div class="separator mb-5"></div>
+                </div>
 
 
                 <div class="col-12">
@@ -42,9 +46,10 @@
                                 <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Username</th>
+                                    <th scope="col">Action</th>
+                                    <th scope="col">Role</th>
                                 </tr>
                                 </thead>
                                 <tbody>
