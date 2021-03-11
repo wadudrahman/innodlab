@@ -1,10 +1,6 @@
 <?php
 
-use App\Http\Controllers\{
-    AuthController,
-    DashboardController,
-    JobController
-};
+use App\Http\Controllers\{AuthController, DashboardController, JobController, UserController};
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,3 +29,4 @@ Route::get('/register/{userRoleId}', [AuthController::class, 'showPackagesView']
 Route::get('/dashboard', [DashboardController::class, 'showDashboardView']);
 Route::get('/jobCategories', [JobController::class, 'showJobCategoryManagementView']);
 Route::get('/addJob', [JobController::class, 'showAddJobView']);
+Route::get('/userManagement', [UserController::class, 'showUserManagementView']);
