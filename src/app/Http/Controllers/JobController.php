@@ -21,7 +21,7 @@ class JobController extends Controller
         return view('jobList');
     }
 
-    public function showJobDetails($jobId)
+    public function showJobDetails()
     {
         return view('jobDetails');
     }
