@@ -25,7 +25,7 @@
                 </li>
 
                 <li>
-                    <a href="#ui">
+                    <a href="#user">
                         <i class="iconsminds-business-mens"></i> User
                     </a>
                 </li>
@@ -88,176 +88,26 @@
                     </a>
                 </li>
             </ul>
-            <ul class="list-unstyled" data-link="ui">
+
+            <ul class="list-unstyled" data-link="user" id="user">
                 <li>
-                    <a href="#" data-toggle="collapse" data-target="#collapseForms" aria-expanded="true"
-                       aria-controls="collapseForms" class="rotate-arrow-icon opacity-50">
-                        <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Forms</span>
+                    <a href="{{ url('/userManagement') }}">
+                        <i class="simple-icon-plus"></i> <span
+                            class="d-inline-block">User Management</span>
                     </a>
-                    <div id="collapseForms" class="collapse show">
-                        <ul class="list-unstyled inner-level-menu">
-                            <li>
-                                <a href="Ui.Forms.Components.html">
-                                    <i class="simple-icon-event"></i> <span class="d-inline-block">Components</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Ui.Forms.Layouts.html">
-                                    <i class="simple-icon-doc"></i> <span class="d-inline-block">Layouts</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Ui.Forms.Validation.html">
-                                    <i class="simple-icon-check"></i> <span class="d-inline-block">Validation</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Ui.Forms.Wizard.html">
-                                    <i class="simple-icon-magic-wand"></i> <span
-                                        class="d-inline-block">Wizard</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
                 </li>
                 <li>
-                    <a href="#" data-toggle="collapse" data-target="#collapseDataTables" aria-expanded="true"
-                       aria-controls="collapseDataTables" class="rotate-arrow-icon opacity-50">
-                        <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Datatables</span>
+                    <a href="{{ url('/addJob') }}">
+                        <i class="simple-icon-plus"></i> <span
+                            class="d-inline-block">Add User</span>
                     </a>
-                    <div id="collapseDataTables" class="collapse show">
-                        <ul class="list-unstyled inner-level-menu">
-                            <li>
-                                <a href="Ui.Datatables.Rows.html">
-                                    <i class="simple-icon-screen-desktop"></i> <span class="d-inline-block">Full
-                                            Page UI</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Ui.Datatables.Scroll.html">
-                                    <i class="simple-icon-mouse"></i> <span class="d-inline-block">Scrollable</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Ui.Datatables.Pagination.html">
-                                    <i class="simple-icon-notebook"></i> <span
-                                        class="d-inline-block">Pagination</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Ui.Datatables.Default.html">
-                                    <i class="simple-icon-grid"></i> <span class="d-inline-block">Default</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
                 </li>
                 <li>
-                    <a href="#" data-toggle="collapse" data-target="#collapseComponents" aria-expanded="true"
-                       aria-controls="collapseComponents" class="rotate-arrow-icon opacity-50">
-                        <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Components</span>
+                    <a href="Pages.Auth.Login.html">
+                        <i class="simple-icon-list"></i> <span
+                            class="d-inline-block">User List</span>
                     </a>
-                    <div id="collapseComponents" class="collapse show">
-                        <ul class="list-unstyled inner-level-menu">
-                            <li>
-                                <a href="Ui.Components.Alerts.html">
-                                    <i class="simple-icon-bell"></i> <span class="d-inline-block">Alerts</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Ui.Components.Badges.html">
-                                    <i class="simple-icon-badge"></i> <span class="d-inline-block">Badges</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Ui.Components.Buttons.html">
-                                    <i class="simple-icon-control-play"></i> <span
-                                        class="d-inline-block">Buttons</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Ui.Components.Cards.html">
-                                    <i class="simple-icon-layers"></i> <span class="d-inline-block">Cards</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="Ui.Components.Carousel.html">
-                                    <i class="simple-icon-picture"></i> <span class="d-inline-block">Carousel</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Ui.Components.Charts.html">
-                                    <i class="simple-icon-chart"></i> <span class="d-inline-block">Charts</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Ui.Components.Collapse.html">
-                                    <i class="simple-icon-arrow-up"></i> <span
-                                        class="d-inline-block">Collapse</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Ui.Components.Dropdowns.html">
-                                    <i class="simple-icon-arrow-down"></i> <span
-                                        class="d-inline-block">Dropdowns</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Ui.Components.Editors.html">
-                                    <i class="simple-icon-book-open"></i> <span
-                                        class="d-inline-block">Editors</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Ui.Components.Icons.html">
-                                    <i class="simple-icon-star"></i> <span class="d-inline-block">Icons</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Ui.Components.InputGroups.html">
-                                    <i class="simple-icon-note"></i> <span class="d-inline-block">Input
-                                            Groups</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Ui.Components.Jumbotron.html">
-                                    <i class="simple-icon-screen-desktop"></i> <span
-                                        class="d-inline-block">Jumbotron</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Ui.Components.Modal.html">
-                                    <i class="simple-icon-docs"></i> <span class="d-inline-block">Modal</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Ui.Components.Navigation.html">
-                                    <i class="simple-icon-cursor"></i> <span
-                                        class="d-inline-block">Navigation</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="Ui.Components.PopoverandTooltip.html">
-                                    <i class="simple-icon-pin"></i> <span class="d-inline-block">Popover &
-                                            Tooltip</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Ui.Components.Sortable.html">
-                                    <i class="simple-icon-shuffle"></i> <span class="d-inline-block">Sortable</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Ui.Components.Tables.html">
-                                    <i class="simple-icon-grid"></i> <span class="d-inline-block">Tables</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
                 </li>
-
             </ul>
 
             <ul class="list-unstyled" data-link="menu" id="menuTypes">

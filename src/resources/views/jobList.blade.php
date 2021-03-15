@@ -50,7 +50,7 @@
                                 Timeline: 60 mins.
                             </p>
                             <footer>
-                                <a class="btn btn-sm btn-circle btn-info" href="{{ url('/jobDetails/1') }}">Details</a>
+                                <a class="btn btn-sm btn-circle btn-info" href="{{ url('/jobDetails') }}">Details</a>
                             </footer>
                         </div>
                     </div>
