@@ -91,16 +91,48 @@
 
             <ul class="list-unstyled" data-link="user" id="user">
                 <li>
-                    <a href="{{ url('/addUser') }}">
-                        <i class="simple-icon-plus"></i> <span
-                            class="d-inline-block">Add User</span>
+                    <a href="#" data-toggle="collapse" data-target="#collapseMenuTypes" aria-expanded="true"
+                       aria-controls="collapseMenuTypes" class="rotate-arrow-icon">
+                        <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">User Management</span>
                     </a>
+                    <div id="collapseMenuTypes" class="collapse show" data-parent="#menuTypes">
+                        <ul class="list-unstyled inner-level-menu">
+                            <li>
+                                <a href="{{ url('/addUser') }}">
+                                    <i class="simple-icon-plus"></i> <span
+                                        class="d-inline-block">Add User</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/userList') }}">
+                                    <i class="simple-icon-list"></i> <span
+                                        class="d-inline-block">User List</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li>
-                    <a href="{{ url('/userList') }}">
-                        <i class="simple-icon-list"></i> <span
-                            class="d-inline-block">User List</span>
+                    <a href="#" data-toggle="collapse" data-target="#collapseMenuTypes" aria-expanded="true"
+                       aria-controls="collapseMenuTypes" class="rotate-arrow-icon">
+                        <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Package Management</span>
                     </a>
+                    <div id="collapseMenuTypes" class="collapse show" data-parent="#menuTypes">
+                        <ul class="list-unstyled inner-level-menu">
+                            <li>
+                                <a href="{{ url('') }}">
+                                    <i class="simple-icon-plus"></i> <span
+                                        class="d-inline-block">Add Package</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/packageManagement') }}">
+                                    <i class="simple-icon-list"></i> <span
+                                        class="d-inline-block">Package Management</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
 
