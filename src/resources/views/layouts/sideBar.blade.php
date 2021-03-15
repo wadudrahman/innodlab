@@ -91,19 +91,13 @@
 
             <ul class="list-unstyled" data-link="user" id="user">
                 <li>
-                    <a href="{{ url('/userManagement') }}">
-                        <i class="simple-icon-plus"></i> <span
-                            class="d-inline-block">User Management</span>
-                    </a>
-                </li>
-                <li>
                     <a href="{{ url('/addJob') }}">
                         <i class="simple-icon-plus"></i> <span
                             class="d-inline-block">Add User</span>
                     </a>
                 </li>
                 <li>
-                    <a href="Pages.Auth.Login.html">
+                    <a href="{{ url('/userList') }}">
                         <i class="simple-icon-list"></i> <span
                             class="d-inline-block">User List</span>
                     </a>

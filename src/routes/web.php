@@ -31,4 +31,4 @@ Route::get('/jobCategories', [JobController::class, 'showJobCategoryManagementVi
 Route::get('/addJob', [JobController::class, 'showAddJobView']);
 Route::get('/jobs', [JobController::class, 'showJobListView']);
 Route::get('/jobDetails', [JobController::class, 'showJobDetails']);
-Route::get('/userManagement', [UserController::class, 'showUserManagementView']);
+Route::get('/userList', [UserController::class, 'showUserListView']);

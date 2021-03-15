@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function showUserManagementView()
+    public function showUserListView()
     {
-        return view('userManagement');
+        return view('userList');
     }
 }
