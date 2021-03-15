@@ -38,17 +38,17 @@
                                     <div class="col-sm-4">
                                         <input type="text" class="form-control" id="title" placeholder="title">
                                     </div>
-                                        <label for="status" class="col-sm-1 col-form-label">Status</label>
-                                        <div class="col-sm-5">
-                                            <div class="form-group">
-                                                <select class="form-control" id="status" name="status">
-                                                    <option value="">Active</option>
-                                                    <option value="">Client</option>
-                                                    <option value="">Designer</option>
-                                                    <option value="">Affiliate</option>
-                                                </select>
-                                            </div>
+                                    <label for="status" class="col-sm-1 col-form-label">Status</label>
+                                    <div class="col-sm-5">
+                                        <div class="form-group">
+                                            <select class="form-control" id="status" name="status">
+                                                <option value="">Active</option>
+                                                <option value="">Client</option>
+                                                <option value="">Designer</option>
+                                                <option value="">Affiliate</option>
+                                            </select>
                                         </div>
+                                    </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-2"></div>
@@ -60,58 +60,86 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="tDaysCount" class="col-sm-2 col-form-label">Trail Days Count</label>
-                                    <div class="col-sm-4">
-                                        <input type="text" class="form-control" id="tDaysCount" placeholder="">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="bufferTimeline">Trail days count</label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control" id="bufferTimeline"
+                                                       name="bufferTimeline" placeholder="15">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">Days</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <label for="tDesignCount" class="col-sm-2 col-form-label">Trail Design Count</label>
-                                    <div class="col-sm-4">
-                                        <input type="text" class="form-control" id="tDesignCount" placeholder="">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="timeline">Trail Design Count</label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control" id="designCount" name="designCount">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="designCount" class="col-sm-2 col-form-label">Design Count</label>
-                                    <div class="col-sm-4">
-                                        <input type="text" class="form-control" id="designCount"
-                                               placeholder="">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="timeline">Design Count</label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control" id="designCount" name="designCount">
+                                            </div>
+                                        </div>
                                     </div>
-
-                                    <label for="fileStorage" class="col-sm-2 col-form-label">File Storage for</label>
-                                    <div class="col-sm-4">
-                                        <input type="text" class="form-control" id="fileStorage" placeholder="">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="bufferTimeline">File Storage for</label>
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control" id="bufferTimeline"
+                                                       name="bufferTimeline" placeholder="15">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">Days</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                    <div class="form-group row">
-                                        <div class="col-sm-2"></div>
-                                        <div class="col-sm-5">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                                <label class="form-check-label" for="gridCheck1">Is Multiple Revisions Available</label>
-                                            </div>
-                                        </div>
-                                        {{-- <div class="col-sm-2">Is Trail Available</div>--}}
-                                        <div class="col-sm-5">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                                <label class="form-check-label" for="gridCheck1">Is Same Day Delivery Available</label>
-                                            </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                            <label class="form-check-label" for="gridCheck1">Is Multiple Revisions
+                                                Available</label>
                                         </div>
                                     </div>
-                                    <div class="form-group row"></div>
-                                    <div class="form-group row">
-                                        <div class="col-sm-2"></div>
-                                        {{-- <div class="col-sm-2">Is Trail Available</div>--}}
-                                        <div class="col-sm-5">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                                <label class="form-check-label" for="gridCheck1">Receive Design Via Email</label>
-                                            </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                            <label class="form-check-label" for="gridCheck1">Is Same Day Delivery
+                                                Available</label>
                                         </div>
-                                        <div class="col-sm-5">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                                <label class="form-check-label" for="gridCheck1">Is Open for Registration</label>
-                                            </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                            <label class="form-check-label" for="gridCheck1">Receive Design Via
+                                                Email</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                            <label class="form-check-label" for="gridCheck1">Is Open for
+                                                Registration</label>
                                         </div>
                                     </div>
                                 </div>
@@ -120,11 +148,11 @@
                                         <button type="submit" class="btn btn-primary mb-0">Add Package</button>
                                     </div>
                                 </div>
-                            </form>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
 @endsection
