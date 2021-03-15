@@ -91,7 +91,7 @@
 
             <ul class="list-unstyled" data-link="user" id="user">
                 <li>
-                    <a href="{{ url('/addJob') }}">
+                    <a href="{{ url('/addUser') }}">
                         <i class="simple-icon-plus"></i> <span
                             class="d-inline-block">Add User</span>
                     </a>
