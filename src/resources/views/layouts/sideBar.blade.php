@@ -120,7 +120,7 @@
                     <div id="collapseMenuTypes" class="collapse show" data-parent="#menuTypes">
                         <ul class="list-unstyled inner-level-menu">
                             <li>
-                                <a href="{{ url('') }}">
+                                <a href="{{ url('/addPackage') }}">
                                     <i class="simple-icon-plus"></i> <span
                                         class="d-inline-block">Add Package</span>
                                 </a>
