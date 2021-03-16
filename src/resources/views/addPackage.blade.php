@@ -143,8 +143,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group row mb-0">
-                                    <div class="col-sm-10">
+                                <div class="row text-center">
+                                    <div class="col-sm-12">
                                         <button type="submit" class="btn btn-primary mb-0">Add Package</button>
                                     </div>
                                 </div>
