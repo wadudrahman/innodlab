@@ -34,3 +34,4 @@ Route::get('/jobDetails', [JobController::class, 'showJobDetails']);
 Route::get('/userList', [UserController::class, 'showUserListView']);
 Route::get('/addUser', [UserController::class, 'showAddUserView']);
 Route::get('/packageManagement', [UserController::class, 'showPackageManagementView']);
+Route::get('/addPackage', [UserController::class, 'showAddPackageView']);

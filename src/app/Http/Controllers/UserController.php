@@ -19,4 +19,9 @@ class UserController extends Controller
     {
         return view('packageManagement');
     }
+
+    public function showAddPackageView()
+    {
+        return view('addPackage');
+    }
 }
