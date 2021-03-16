@@ -73,21 +73,6 @@
                         <span class="d-inline-block">Payment Management</span>
                     </a>
                 </li>
-                <li>
-                    <a href="Apps.Todo.List.html">
-                        <i class="simple-icon-check"></i> <span class="d-inline-block">Todo</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="Apps.Survey.List.html">
-                        <i class="simple-icon-calculator"></i> <span class="d-inline-block">Survey</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="Apps.Chat.html">
-                        <i class="simple-icon-bubbles"></i> <span class="d-inline-block">Chat</span>
-                    </a>
-                </li>
             </ul>
 
             <ul class="list-unstyled" data-link="user" id="user">
