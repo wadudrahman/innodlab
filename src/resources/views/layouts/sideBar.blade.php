@@ -19,7 +19,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#applications">
+                    <a href="#payment">
                         <i class="iconsminds-financial"></i> Payment
                     </a>
                 </li>
@@ -66,10 +66,11 @@
                     </a>
                 </li>
             </ul>
-            <ul class="list-unstyled" data-link="applications">
+            <ul class="list-unstyled" data-link="payment">
                 <li>
-                    <a href="Apps.MediaLibrary.html">
-                        <i class="simple-icon-picture"></i> <span class="d-inline-block">Library</span>
+                    <a href="{{ url('/paymentManagement') }}">
+                        <i class="simple-icon-plus"></i>
+                        <span class="d-inline-block">Payment Management</span>
                     </a>
                 </li>
                 <li>
