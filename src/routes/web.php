@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\{AuthController, DashboardController, JobController, UserController};
+use App\Http\Controllers\{AuthController, DashboardController, JobController, PaymentController, UserController};
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -35,3 +35,4 @@ Route::get('/userList', [UserController::class, 'showUserListView']);
 Route::get('/addUser', [UserController::class, 'showAddUserView']);
 Route::get('/packageManagement', [UserController::class, 'showPackageManagementView']);
 Route::get('/addPackage', [UserController::class, 'showAddPackageView']);
+Route::get('/paymentManagement', [PaymentController::class, 'showPaymentManagementView']);
