@@ -46,10 +46,10 @@
                                 <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Username</th>
-                                    <th scope="col">Role</th>
-                                    <th scope="col">Action</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Job ID</th>
+                                    <th scope="col">Details</th>
+                                    <th scope="col">Status</th>
 
                                 </tr>
                                 </thead>
