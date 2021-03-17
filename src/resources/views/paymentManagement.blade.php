@@ -26,7 +26,7 @@
                 <div class="col-lg-6 col-md-12 mb-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Add New Payment</h5>
+                            <h5 class="card-title">Add New Payment Method</h5>
 
                             <form method="post" action="{{ url('') }}">
                                 <div class="form-group">
@@ -72,8 +72,8 @@
                     <div class="card">
                         <div class="card-body">
                                 <div class="card-body text-center">
-                                    <i class="iconsminds-clock"></i>
-                                    <p class="card-text font-weight-semibold mb-0">Pending Orders</p>
+                                    <i class="iconsminds-money-bag" style="font-size: 100px; line-height: 166px;"></i>
+                                    <p class="card-text font-weight-semibold mb-0">Total Enlisted Payment Methods</p>
                                     <p class="lead text-center">16</p>
                                 </div>
                         </div>
@@ -85,13 +85,12 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Enlisted Job Categories</h5>
+                            <h5 class="card-title">Enlisted Payment Methods</h5>
                             <table class="table table-bordered">
                                 <thead>
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">Title</th>
-                                    <th scope="col">Priority</th>
                                     <th scope="col">Status</th>
                                     <th scope="col">Action</th>
                                 </tr>
@@ -99,20 +98,21 @@
                                 <tbody>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
+                                    <td>Bank Deposit</td>
+                                    <td>Active</td>
                                     <td>@mdo</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
+                                    <td>bKash</td>
+                                    <td>Active</td>
                                     <td>@fat</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">3</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
+                                    <td>Rocket</td>
+                                    <td>Inactive</td>
+                                    <td>@fat</td>
                                 </tr>
                                 </tbody>
                             </table>

@@ -72,8 +72,8 @@
                     <div class="card">
                         <div class="card-body">
                                 <div class="card-body text-center">
-                                    <i class="iconsminds-clock"></i>
-                                    <p class="card-text font-weight-semibold mb-0">Pending Orders</p>
+                                    <i class="iconsminds-folder" style="font-size: 100px; line-height: 166px;"></i>
+                                    <p class="card-text font-weight-semibold mb-0">Total Enlisted Categories</p>
                                     <p class="lead text-center">16</p>
                                 </div>
                         </div>
