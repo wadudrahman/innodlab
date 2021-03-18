@@ -115,14 +115,21 @@
                     </div>
                     <div class="card mb-4">
                         <div class="card-body">
-                            <h5 class="mb-4">Top Labels Over Line</h5>
+                            <h5 class="mb-4">Apply for Extra Time</h5>
                             <form>
-                                <label class="form-group has-float-label">
-                                    <input class="form-control">
-                                    <span>E-mail</span>
-                                </label>
-
-                                <button class="btn btn-primary" type="submit">Sign up</button>
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <input type="number" class="form-control" id="timeline" name="timeline">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">Minutes</span>
+                                        </div>
+                                    </div>
+                                    <small id="emailHelp" class="form-text text-muted">We'll
+                                        never share your email with anyone else.</small>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary mb-0">Submit</button>
+                                </div>
                             </form>
                         </div>
                     </div>
