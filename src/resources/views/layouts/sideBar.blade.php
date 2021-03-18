@@ -23,10 +23,14 @@
                         <i class="iconsminds-financial"></i> Payment
                     </a>
                 </li>
-
                 <li>
                     <a href="#user">
                         <i class="iconsminds-business-mens"></i> User
+                    </a>
+                </li>
+                <li>
+                    <a href="#settings">
+                        <i class="iconsminds-business-mens"></i> Settings
                     </a>
                 </li>
             </ul>
@@ -75,7 +79,6 @@
                     </a>
                 </li>
             </ul>
-
             <ul class="list-unstyled" data-link="user" id="user">
                 <li>
                     <a href="#userManagements" data-toggle="collapse" data-target="#userManagements" aria-expanded="true"
@@ -122,6 +125,14 @@
                             </li>
                         </ul>
                     </div>
+                </li>
+            </ul>
+            <ul class="list-unstyled" data-link="settings">
+                <li>
+                    <a href="{{ url('/paymentManagement') }}">
+                        <i class="simple-icon-wallet"></i>
+                        <span class="d-inline-block">Account Settings</span>
+                    </a>
                 </li>
             </ul>
         </div>

@@ -74,7 +74,7 @@
                                 <div class="card-body text-center">
                                     <i class="iconsminds-folder" style="font-size: 100px; line-height: 166px;"></i>
                                     <p class="card-text font-weight-semibold mb-0">Total Enlisted Categories</p>
-                                    <p class="lead text-center">16</p>
+                                    <p class="lead text-center">2</p>
                                 </div>
                         </div>
                     </div>
@@ -89,30 +89,35 @@
                             <table class="table table-bordered">
                                 <thead>
                                 <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Title</th>
-                                    <th scope="col">Priority</th>
-                                    <th scope="col">Status</th>
-                                    <th scope="col">Action</th>
+                                    <th class="text-center" scope="col">#</th>
+                                    <th class="text-center" scope="col">Title</th>
+                                    <th class="text-center" scope="col">Priority</th>
+                                    <th class="text-center" scope="col">Status</th>
+                                    <th class="text-center" scope="col">Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
+                                    <td>Ready Made Garments (RMG)</td>
+                                    <td>1</td>
+                                    <td>Active</td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-xs btn-outline-info mb-1">Inactive</button>
+                                        <button type="button" class="btn btn-xs btn-outline-warning mb-1">Edit</button>
+                                        <button type="button" class="btn btn-xs btn-outline-danger mb-1">Delete</button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
+                                    <td>Web Design</td>
+                                    <td>2</td>
+                                    <td>Inactive</td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-xs btn-outline-info mb-1">Active</button>
+                                        <button type="button" class="btn btn-xs btn-outline-warning mb-1">Edit</button>
+                                        <button type="button" class="btn btn-xs btn-outline-danger mb-1">Delete</button>
+                                    </td>
                                 </tr>
                                 </tbody>
                             </table>
