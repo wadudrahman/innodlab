@@ -67,11 +67,15 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-12 col-xl-4">
-                    <div class="card mb-4">
-                        <div class="card bg-dark text-white">
-                            <img class="card-img" src="img/cards/thumb-1.jpg" alt="Card image">
-                            <div class="card-img-overlay">
-                                <button type="button" class="btn btn-light mb-1">Preview</button>
+                    <div class="card mb-4 d-none d-lg-block">
+                        <div class="card-body">
+                            <div class="row social-image-row gallery">
+                                <div class="col-12">
+                                    <a href="img/products/marble-cake.jpg">
+                                        <img class="img-fluid border-radius"
+                                             src="img/products/marble-cake-thumb.jpg">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -135,6 +139,30 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div role="dialog" id="baguetteBox-overlay"
+             aria-labelledby="baguetteBox-figure-0 baguetteBox-figure-1 baguetteBox-figure-2 baguetteBox-figure-3 baguetteBox-figure-4 baguetteBox-figure-5"
+             aria-describedby="baguetteBox-figcaption-0 baguetteBox-figcaption-1 baguetteBox-figcaption-2 baguetteBox-figcaption-3 baguetteBox-figcaption-4 baguetteBox-figcaption-5"
+             class="visible" style="opacity: 1; background-color: rgba(0, 0, 0, 0.8); display: block;">
+            <div id="baguetteBox-slider" style="transform: translate3d(0%, 0px, 0px);">
+                <div class="full-image" id="baguette-img-0">
+                    <figure id="baguetteBox-figure-0"><img
+                            src="https://dore-jquery.coloredstrategies.com/img/products/marble-cake.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="full-image" id="baguette-img-3"></div>
+                <div class="full-image" id="baguette-img-4"></div>
+                <div class="full-image" id="baguette-img-5"></div>
+            </div>
+            <button type="button" id="close-button" aria-label="Close" class="baguetteBox-button">
+                <svg width="30" height="30">
+                    <g stroke="rgb(160,160,160)" stroke-width="4">
+                        <line x1="5" y1="5" x2="25" y2="25"></line>
+                        <line x1="5" y1="25" x2="25" y2="5"></line>
+                    </g>
+                </svg>
+            </button>
         </div>
     </main>
 @endsection
