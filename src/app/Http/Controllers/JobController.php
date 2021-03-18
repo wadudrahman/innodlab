@@ -25,4 +25,13 @@ class JobController extends Controller
     {
         return view('jobDetails');
     }
+
+    public function showMyJobBoardView()
+    {
+        return view('myJobBoard');
+    }
+    public function showJobBoardView()
+    {
+        return view('jobBoard');
+    }
 }

@@ -54,6 +54,18 @@
                             class="d-inline-block">Job List</span>
                     </a>
                 </li>
+                <li>
+                    <a href="{{ url('/myJobBoard') }}">
+                        <i class="simple-icon-list"></i> <span
+                            class="d-inline-block">My Job Board</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('/jobBoard') }}">
+                        <i class="simple-icon-list"></i> <span
+                            class="d-inline-block">Job Board</span>
+                    </a>
+                </li>
             </ul>
             <ul class="list-unstyled" data-link="payment">
                 <li>
