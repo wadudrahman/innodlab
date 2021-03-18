@@ -24,7 +24,7 @@
     </div>
 
 
-    <a class="navbar-logo" href="Dashboard.Default.html">
+    <a class="navbar-logo" href="{{ url('/dashboard') }}">
         <span class="logo d-none d-xs-block"></span>
         <span class="logo-mobile d-block d-xs-none"></span>
     </a>

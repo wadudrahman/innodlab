@@ -9,7 +9,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#menu">
+                    <a href="javascript:void(0)">
                         <i class="iconsminds-mail"></i> Mail
                     </a>
                 </li>
