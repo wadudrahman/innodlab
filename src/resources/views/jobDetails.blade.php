@@ -33,7 +33,8 @@
                             <div class="mb-5">
                                 <h5 class="card-title">Job Description</h5>
                                 <p>
-                                    Blended value human-centered social innovation resist scale and impact issue outcomes
+                                    Blended value human-centered social innovation resist scale and impact issue
+                                    outcomes
                                     bandwidth efficient. A; social return on investment, change-makers, support a,
                                     co-create commitment because sustainable. Rubric when vibrant black lives matter
                                     benefit corporation human-centered. Save the world, problem-solvers support silo
@@ -57,7 +58,7 @@
                             <div class="mt-4 feedback-container">
                                 <div class="text-center">
                                     <p class="feedback-answer">Found yourself perfect for the job?</p>
-                                    <a class="btn btn-sm btn-outline-success"  title="" href="#">
+                                    <a class="btn btn-sm btn-outline-success" title="" href="#">
                                         <i class="simple-icon-like"></i> Apply Now !
                                     </a>
                                 </div>
@@ -110,6 +111,19 @@
                                     <a href="javascript:void(0)"><p class="list-item-heading mb-1">Budget</p></a>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="mb-4">Top Labels Over Line</h5>
+                            <form>
+                                <label class="form-group has-float-label">
+                                    <input class="form-control">
+                                    <span>E-mail</span>
+                                </label>
+
+                                <button class="btn btn-primary" type="submit">Sign up</button>
+                            </form>
                         </div>
                     </div>
                 </div>
