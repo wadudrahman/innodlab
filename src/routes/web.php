@@ -37,3 +37,4 @@ Route::get('/packageManagement', [UserController::class, 'showPackageManagementV
 Route::get('/addPackage', [UserController::class, 'showAddPackageView']);
 Route::get('/paymentManagement', [PaymentController::class, 'showPaymentManagementView']);
 Route::get('/myJobBoard', [JobController::class, 'showMyJobBoardView']);
+Route::get('/jobBoard', [JobController::class, 'showJobBoardView']);
