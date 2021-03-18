@@ -151,9 +151,6 @@
                             src="https://dore-jquery.coloredstrategies.com/img/products/marble-cake.jpg" alt="">
                     </figure>
                 </div>
-                <div class="full-image" id="baguette-img-3"></div>
-                <div class="full-image" id="baguette-img-4"></div>
-                <div class="full-image" id="baguette-img-5"></div>
             </div>
             <button type="button" id="close-button" aria-label="Close" class="baguetteBox-button">
                 <svg width="30" height="30">
