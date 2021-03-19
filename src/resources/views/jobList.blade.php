@@ -44,12 +44,24 @@
                             <img class="card-img-top" src="img/cards/thumb-1.jpg" alt="Card image cap">
                         </div>
                         <div class="card-body">
-                            <h6>Title</h6>
-                            <p class="list-item mb-4">
-                                Budget: BDT 300 <br>
-                                Timeline: 60 mins.
-                            </p>
-                            <footer>
+                            <h6>Title (Job Id)</h6>
+                            <table class="table table-borderless">
+                                <tbody>
+                                <tr>
+                                    <td>Budget</td>
+                                    <td>BDT 300</td>
+                                </tr>
+                                <tr>
+                                    <td>Timeline</td>
+                                    <td>1 Day 5 Hours 36 Minutes</td>
+                                </tr>
+                                <tr>
+                                    <td>Category</td>
+                                    <td>Ready Made Garments (RMG)</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <footer class="text-center">
                                 <a class="btn btn-sm btn-circle btn-info" href="{{ url('/jobDetails') }}">Details</a>
                             </footer>
                         </div>

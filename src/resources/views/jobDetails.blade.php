@@ -126,7 +126,7 @@
                                     </div>
                                     <small id="emailHelp" class="form-text text-muted">We'll
                                         never share your email with anyone else.</small>
-                                </div>
+                                </div>Main
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-primary mb-0">Submit</button>
                                 </div>

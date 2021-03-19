@@ -59,10 +59,8 @@
                                         <div class="form-group">
                                             <label for="category">Select Category</label>
                                             <select class="form-control" id="category" name="category">
-                                                <option value="">Category 1</option>
-                                                <option value="">Category 2</option>
-                                                <option value="">Category 3</option>
-                                                <option value="">Category 4</option>
+                                                <option value="">Ready Made Garments (RMG)</option>
+                                                <option value="">Web Design</option>
                                             </select>
                                         </div>
                                     </div>
@@ -70,7 +68,8 @@
                                         <div class="form-group">
                                             <label for="timeline">Timeline</label>
                                             <div class="input-group mb-3">
-                                                <input type="number" class="form-control" id="timeline" name="timeline">
+                                                <input type="number" class="form-control" id="timeline" name="timeline"
+                                                       placeholder="15">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">Minutes</span>
                                                 </div>
