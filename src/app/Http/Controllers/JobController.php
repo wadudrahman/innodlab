@@ -34,4 +34,40 @@ class JobController extends Controller
     {
         return view('jobBoard');
     }
+    public function showFromEmailView()
+    {
+        return view('fromEmail');
+    }
+    public function showFromSystemView()
+    {
+        return view('fromSystem');
+    }
+    public function showJobRequestView()
+    {
+        return view('jobRequest');
+    }
+    public function showOnBoardJobListView()
+    {
+        return view('onBoardJobList');
+    }
+    public function showOngoingJobView()
+    {
+        return view('ongoingJob');
+    }
+    public function showSubmittedJobView()
+    {
+        return view('submittedJob');
+    }
+    public function showRevisionJobView()
+    {
+        return view('revisionJob');
+    }
+    public function showCompletedJobView()
+    {
+        return view('completedJob');
+    }
+    public function showPendingJobsView()
+    {
+        return view('pendingJobs');
+    }
 }

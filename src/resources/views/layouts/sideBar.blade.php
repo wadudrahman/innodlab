@@ -70,6 +70,60 @@
                             class="d-inline-block">Job Board</span>
                     </a>
                 </li>
+                <li>
+                    <a href="{{ url('/fromEmail') }}">
+                        <i class="simple-icon-list"></i> <span
+                            class="d-inline-block">From Email</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('/fromSystem') }}">
+                        <i class="simple-icon-list"></i> <span
+                            class="d-inline-block">From System</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('/jobRequest') }}">
+                        <i class="simple-icon-list"></i> <span
+                            class="d-inline-block">Job Request</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('/onBoardJobList') }}">
+                        <i class="simple-icon-list"></i> <span
+                            class="d-inline-block">On Board Job List</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('/ongoingJob') }}">
+                        <i class="simple-icon-list"></i> <span
+                            class="d-inline-block">Ongoing Job</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('/submittedJob') }}">
+                        <i class="simple-icon-list"></i> <span
+                            class="d-inline-block">Submitted Job</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('/revisionJob') }}">
+                        <i class="simple-icon-list"></i> <span
+                            class="d-inline-block">Revision Job</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('/completedJob') }}">
+                        <i class="simple-icon-list"></i> <span
+                            class="d-inline-block">Completed Job</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('/pendingJobs') }}">
+                        <i class="simple-icon-list"></i> <span
+                            class="d-inline-block">Pending Jobs</span>
+                    </a>
+                </li>
             </ul>
             <ul class="list-unstyled" data-link="payment">
                 <li>
