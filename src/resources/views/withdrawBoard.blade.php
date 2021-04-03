@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Job Board')
+@section('title', 'Payment Withdraw Board')
 
-@section('parent', 'Job')
+@section('parent', 'Payment')
 
 @section('content')
     <main>
@@ -23,54 +23,47 @@
                     </nav>
                     <div class="separator mb-5"></div>
                 </div>
-
-                {{--<div class="col-sm-4 offset-4">
-                    <div class="input-group">
-                        <input type="text" class="form-control"
-                               name="query" id="query"
-                               placeholder="Start typing something to search..."
-                               data-provide="typeahead" autocomplete="off">
-                        <div class="input-group-append">
-                            <button type="submit" class="btn btn-primary default"><i class="simple-icon-magnifier"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="separator mb-5"></div>
-                </div>--}}
-
-
                 <div class="col-12">
                     <div class="card">
-                        <div class="card-body"><h5 class="card-title">Job Board</h5>
+                        <div class="card-body">
+
                             <table class="table table-hover">
                                 <thead>
-                                <tr>
+                                <tr class="text-center">
                                     <th scope="col">#</th>
-                                    <th scope="col">Title</th>
-                                    <th scope="col">Job Token</th>
-                                    <th scope="col">Details</th>
+                                    <th scope="col">Requested By</th>
+                                    <th scope="col">Current Balance</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Method</th>
                                     <th scope="col">Status</th>
-                                    <th scope="col">Source</th>
+                                    <th scope="col">Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
+                                    <td>Mark (mark@gmail.com)</td>
+                                    <td>6021</td>
+                                    <td>1200</td>
+                                    <td>bKash</td>
+                                    <td>Pending</td>
+                                    <td class="text-center">
+                                        <a class="btn btn-sm btn-outline-success">Approve</a>
+                                        <a class="btn btn-sm btn-outline-danger">Deny</a>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
+                                    <td>Mark (mark@gmail.com)</td>
+                                    <td>6595</td>
+                                    <td>1000</td>
+                                    <td>Bank Deposit</td>
+                                    <td>Done</td>
+                                    <td class="text-center">
+                                        <a class="btn btn-sm btn-outline-info">View Reference</a>
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
+
                                 </tbody>
                             </table>
                         </div>

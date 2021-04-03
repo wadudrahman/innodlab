@@ -129,7 +129,19 @@
                 <li>
                     <a href="{{ url('/paymentManagement') }}">
                         <i class="simple-icon-wallet"></i>
-                        <span class="d-inline-block">Payment Management</span>
+                        <span class="d-inline-block">Management</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('/paymentWithdraw') }}">
+                        <i class="simple-icon-wallet"></i>
+                        <span class="d-inline-block">Withdraw</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('/withdrawBoard') }}">
+                        <i class="simple-icon-wallet"></i>
+                        <span class="d-inline-block">Withdrawal Board</span>
                     </a>
                 </li>
             </ul>
