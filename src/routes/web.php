@@ -47,3 +47,4 @@ Route::get('/submittedJob', [JobController::class, 'showSubmittedJobView']);
 Route::get('/revisionJob', [JobController::class, 'showRevisionJobView']);
 Route::get('/completedJob', [JobController::class, 'showCompletedJobView']);
 Route::get('/pendingJobs', [JobController::class, 'showPendingJobsView']);
+Route::get('/paymentRequest', [PaymentController::class, 'showPaymentRequestView']);

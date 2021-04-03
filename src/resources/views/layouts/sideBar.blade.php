@@ -132,6 +132,12 @@
                         <span class="d-inline-block">Payment Management</span>
                     </a>
                 </li>
+                <li>
+                    <a href="{{ url('/paymentRequest') }}">
+                        <i class="simple-icon-question"></i>
+                        <span class="d-inline-block">Payment Request</span>
+                    </a>
+                </li>
             </ul>
             <ul class="list-unstyled" data-link="user" id="user">
                 <li>

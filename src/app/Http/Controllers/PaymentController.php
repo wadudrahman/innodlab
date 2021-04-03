@@ -10,4 +10,8 @@ class PaymentController extends Controller
     {
         return view('paymentManagement');
     }
+    public function showPaymentRequestView()
+    {
+        return view('paymentRequest');
+    }
 }
