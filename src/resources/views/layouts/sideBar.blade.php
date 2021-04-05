@@ -9,13 +9,18 @@
                     </a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">
+                    <a href="#mail">
                         <i class="iconsminds-mail"></i> Mail
                     </a>
                 </li>
                 <li>
                     <a href="#jobManagement">
                         <i class="iconsminds-digital-drawing"></i> Job
+                    </a>
+                </li>
+                <li>
+                    <a href="#chat">
+                        <i class="simple-icon-bubbles"></i> Chat
                     </a>
                 </li>
                 <li>
@@ -198,6 +203,34 @@
                     <a href="{{ url('/paymentManagement') }}">
                         <i class="simple-icon-wallet"></i>
                         <span class="d-inline-block">Account Settings</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="list-unstyled" data-link="mail">
+                <li>
+                    <a href="{{ url('/inbox') }}">
+                        <i class="iconsminds-mail-inbox"></i>
+                        <span class="d-inline-block">Inbox</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('/sendMail') }}">
+                        <i class="iconsminds-mail-forward"></i>
+                        <span class="d-inline-block">Send Mail</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="list-unstyled" data-link="chat">
+                <li>
+                    <a href="{{ url('/startChat') }}">
+                        <i class="simple-icon-bubble"></i>
+                        <span class="d-inline-block">Start Chat</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('/chatRequest') }}">
+                        <i class="simple-icon-question"></i>
+                        <span class="d-inline-block">Chat Request</span>
                     </a>
                 </li>
             </ul>

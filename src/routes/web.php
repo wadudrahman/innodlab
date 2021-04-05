@@ -1,6 +1,12 @@
 <?php
 
-use App\Http\Controllers\{AuthController, DashboardController, JobController, PaymentController, UserController};
+use App\Http\Controllers\{AuthController,
+    ChatController,
+    DashboardController,
+    JobController,
+    MailController,
+    PaymentController,
+    UserController};
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -53,3 +59,8 @@ Route::get('/submittedJob', [JobController::class, 'showSubmittedJobView']);
 Route::get('/revisionJob', [JobController::class, 'showRevisionJobView']);
 Route::get('/completedJob', [JobController::class, 'showCompletedJobView']);
 Route::get('/pendingJobs', [JobController::class, 'showPendingJobsView']);
+Route::get('/inbox', [MailController::class, 'showInboxView']);
+Route::get('/sendMail', [MailController::class, 'showSendMailView']);
+Route::get('/startChat', [ChatController::class, 'showStartChatView']);
+Route::get('/chatRequest', [ChatController::class, 'showChatRequestView']);
+
