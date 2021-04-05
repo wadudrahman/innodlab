@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\{AuthController,
+    ChatController,
     DashboardController,
     JobController,
     MailController,
@@ -60,4 +61,6 @@ Route::get('/completedJob', [JobController::class, 'showCompletedJobView']);
 Route::get('/pendingJobs', [JobController::class, 'showPendingJobsView']);
 Route::get('/inbox', [MailController::class, 'showInboxView']);
 Route::get('/sendMail', [MailController::class, 'showSendMailView']);
+Route::get('/startChat', [ChatController::class, 'showStartChatView']);
+Route::get('/chatRequest', [ChatController::class, 'showChatRequestView']);
 

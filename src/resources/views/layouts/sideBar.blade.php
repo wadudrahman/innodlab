@@ -19,6 +19,11 @@
                     </a>
                 </li>
                 <li>
+                    <a href="#chat">
+                        <i class="simple-icon-bubbles"></i> Chat
+                    </a>
+                </li>
+                <li>
                     <a href="#payment">
                         <i class="iconsminds-financial"></i> Payment
                     </a>
@@ -212,6 +217,20 @@
                     <a href="{{ url('/sendMail') }}">
                         <i class="iconsminds-mail-forward"></i>
                         <span class="d-inline-block">Send Mail</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="list-unstyled" data-link="chat">
+                <li>
+                    <a href="{{ url('/startChat') }}">
+                        <i class="simple-icon-bubble"></i>
+                        <span class="d-inline-block">Start Chat</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('/chatRequest') }}">
+                        <i class="simple-icon-question"></i>
+                        <span class="d-inline-block">Chat Request</span>
                     </a>
                 </li>
             </ul>
