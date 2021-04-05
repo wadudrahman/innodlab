@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Payment Management')
+@section('title', 'Payment Withdraw')
 
 @section('parent', 'Payment')
 
@@ -26,35 +26,22 @@
                 <div class="col-lg-6 col-md-12 mb-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Add New Payment Method</h5>
+                            <h5 class="card-title">Request Payment Withdrawal</h5>
+
                             <form method="post" action="{{ url('') }}">
                                 <div class="form-group">
-                                    <label for="categoryName">Title</label>
-                                    <input type="text" class="form-control" id="categoryName" name="categoryName"
-                                           placeholder="Enter Category name">
-                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email
-                                        with anyone else.</small>
-                                </div>
-                                <div class="form-group">
                                     <div class="row">
-                                        <div class="col-sm-4">
-                                            <label for="priority">Priority</label>
-                                            <div class="form-group mb-3">
-                                                <input type="number" class="form-control" id="priority" name="priority">
-                                            </div>
+                                        <div class="col-sm-6">
+                                            <label for="categoryName">Amount</label>
+                                            <input type="text" class="form-control" id="categoryName" name="categoryName"
+                                                   placeholder="Enter Amount">
                                         </div>
-                                        <div class="col-sm-4">
-                                            <label for="priority">Minimum Amount</label>
-                                            <div class="form-group mb-3">
-                                                <input type="number" class="form-control" id="minimumAmount" name="minimumAmount">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <label for="status">Status</label>
+                                        <div class="col-sm-6">
+                                            <label for="status">Method</label>
                                             <div class="form-group mb-3">
                                                 <select class="form-control" id="status" name="status">
-                                                    <option selected>Active</option>
-                                                    <option value="1">Inactive</option>
+                                                    <option value="0" selected>bKash</option>
+                                                    <option value="1">Bank Deposit</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -65,10 +52,7 @@
                                         <button type="submit" class="btn btn-primary mb-0">Submit</button>
                                     </div>
                                 </div>
-
-
                             </form>
-
                         </div>
                     </div>
                 </div>
@@ -77,9 +61,9 @@
                     <div class="card">
                         <div class="card-body">
                                 <div class="card-body text-center">
-                                    <i class="iconsminds-money-bag" style="font-size: 100px; line-height: 166px;"></i>
-                                    <p class="card-text font-weight-semibold mb-0">Total Enlisted Payment Methods</p>
-                                    <p class="lead text-center">16</p>
+                                    <i class="iconsminds-money-bag" style="font-size: 50px; line-height: 65px;"></i>
+                                    <p class="card-text font-weight-semibold mb-0">Withdrawable Balance</p>
+                                    <p class="lead text-center">BDT 16</p>
                                 </div>
                         </div>
                     </div>
@@ -90,34 +74,31 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Enlisted Payment Methods</h5>
+                            <h5 class="card-title">Payment Withdrawal History</h5>
                             <table class="table table-bordered">
                                 <thead>
-                                <tr>
+                                <tr class="text-center">
                                     <th scope="col">#</th>
-                                    <th scope="col">Title</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Method</th>
                                     <th scope="col">Status</th>
-                                    <th scope="col">Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Bank Deposit</td>
-                                    <td>Active</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
+                                    <td>26/03/2021</td>
+                                    <td>BDT 500</td>
                                     <td>bKash</td>
-                                    <td>Active</td>
-                                    <td>@fat</td>
+                                    <td>Pending</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">3</th>
+                                    <th scope="row">1</th>
+                                    <td>26/03/2021</td>
+                                    <td>BDT 4952</td>
                                     <td>Rocket</td>
-                                    <td>Inactive</td>
-                                    <td>@fat</td>
+                                    <td>Done</td>
                                 </tr>
                                 </tbody>
                             </table>

@@ -36,6 +36,12 @@ Route::get('/addUser', [UserController::class, 'showAddUserView']);
 Route::get('/packageManagement', [UserController::class, 'showPackageManagementView']);
 Route::get('/addPackage', [UserController::class, 'showAddPackageView']);
 Route::get('/paymentManagement', [PaymentController::class, 'showPaymentManagementView']);
+Route::get('/paymentWithdraw', [PaymentController::class, 'showWithdrawPaymentView']);
+Route::get('/withdrawBoard', [PaymentController::class, 'showWithdrawBoardView']);
+
+
+
+
 Route::get('/myJobBoard', [JobController::class, 'showMyJobBoardView']);
 Route::get('/jobBoard', [JobController::class, 'showJobBoardView']);
 Route::get('/fromEmail', [JobController::class, 'showFromEmailView']);

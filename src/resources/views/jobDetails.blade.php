@@ -4,6 +4,18 @@
 
 @section('parent', 'Job')
 
+@push('after_styles')
+    <link rel="stylesheet" href="{{ asset('css/vendor/baguetteBox.min.css') }}" />
+    <style>
+        .rounded .card-img-top, .rounded .card-img-top .vjs-poster, .rounded .card-img-top .vjs-tech {
+            border-top-left-radius: .75rem;
+            border-top-right-radius: .75rem;
+            border-bottom-left-radius: .75rem;
+            border-bottom-right-radius: .75rem;
+        }
+    </style>
+@endpush
+
 @section('content')
     <main>
         <div class="container-fluid">
@@ -67,17 +79,10 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-12 col-xl-4">
-                    <div class="card mb-4 d-none d-lg-block">
-                        <div class="card-body">
-                            <div class="row social-image-row gallery">
-                                <div class="col-12">
-                                    <a href="img/products/marble-cake.jpg">
-                                        <img class="img-fluid border-radius"
-                                             src="img/products/marble-cake-thumb.jpg">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="card mb-4">
+                        <a href="img/details/5.jpg">
+                            <img alt="detail" src="img/details/5.jpg" class="responsive border-0 card-img-top">
+                        </a>
                     </div>
                     <div class="card mb-4">
                         <div class="card-body">
@@ -130,7 +135,8 @@
                                     </div>
                                     <small id="emailHelp" class="form-text text-muted">We'll
                                         never share your email with anyone else.</small>
-                                </div>Main
+                                </div>
+                                Main
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-primary mb-0">Submit</button>
                                 </div>
@@ -140,27 +146,9 @@
                 </div>
             </div>
         </div>
-
-        <div role="dialog" id="baguetteBox-overlay"
-             aria-labelledby="baguetteBox-figure-0 baguetteBox-figure-1 baguetteBox-figure-2 baguetteBox-figure-3 baguetteBox-figure-4 baguetteBox-figure-5"
-             aria-describedby="baguetteBox-figcaption-0 baguetteBox-figcaption-1 baguetteBox-figcaption-2 baguetteBox-figcaption-3 baguetteBox-figcaption-4 baguetteBox-figcaption-5"
-             class="visible" style="opacity: 1; background-color: rgba(0, 0, 0, 0.8); display: block;">
-            <div id="baguetteBox-slider" style="transform: translate3d(0%, 0px, 0px);">
-                <div class="full-image" id="baguette-img-0">
-                    <figure id="baguetteBox-figure-0"><img
-                            src="https://dore-jquery.coloredstrategies.com/img/products/marble-cake.jpg" alt="">
-                    </figure>
-                </div>
-            </div>
-            <button type="button" id="close-button" aria-label="Close" class="baguetteBox-button">
-                <svg width="30" height="30">
-                    <g stroke="rgb(160,160,160)" stroke-width="4">
-                        <line x1="5" y1="5" x2="25" y2="25"></line>
-                        <line x1="5" y1="25" x2="25" y2="5"></line>
-                    </g>
-                </svg>
-            </button>
-        </div>
     </main>
 @endsection
 
+@push('scripts')
+    <script src="{{ asset('js/vendor/baguetteBox.min.js') }}"></script>
+@endpush

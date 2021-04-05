@@ -10,6 +10,16 @@ class PaymentController extends Controller
     {
         return view('paymentManagement');
     }
+
+    public function showWithdrawPaymentView()
+    {
+        return view('withdrawPayment');
+    }
+
+    public function showWithdrawBoardView()
+    {
+        return view('withdrawBoard');
+    }
     public function showPaymentRequestView()
     {
         return view('paymentRequest');

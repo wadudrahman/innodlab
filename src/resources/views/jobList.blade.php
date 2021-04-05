@@ -4,6 +4,15 @@
 
 @section('parent', 'Job')
 
+@push('after_styles')
+    <style>
+        .table th, .table td {
+            padding: 0;
+            vertical-align: top;
+        }
+    </style>
+@endpush
+
 @section('content')
     <main>
         <div class="container-fluid">
@@ -39,12 +48,12 @@
             </div>
             <div class="row">
                 <div class="col-sm-3">
-                    <div class="card">
+                    <div class="card mb-4">
                         <div class="position-relative">
                             <img class="card-img-top" src="img/cards/thumb-1.jpg" alt="Card image cap">
                         </div>
                         <div class="card-body">
-                            <h6>Title (Job Id)</h6>
+                            <h6>T-Shirt Mockup </h6>
                             <table class="table table-borderless">
                                 <tbody>
                                 <tr>
@@ -56,56 +65,19 @@
                                     <td>1 Day 5 Hours 36 Minutes</td>
                                 </tr>
                                 <tr>
-                                    <td>Category</td>
-                                    <td>Ready Made Garments (RMG)</td>
+                                    <td>Job Token</td>
+                                    <td>AED159687</td>
                                 </tr>
                                 </tbody>
                             </table>
                             <footer class="text-center">
                                 <a class="btn btn-sm btn-circle btn-info" href="{{ url('/jobDetails') }}">Details</a>
+                                <a class="btn btn-sm btn-circle btn-primary" href="{{ url('/jobDetails') }}">Apply Now !</a>
                             </footer>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
-                    <div class="card">
-                        <div class="position-relative">
-                            <img class="card-img-top" src="img/cards/thumb-1.jpg" alt="Card image cap">
-                        </div>
-                        <div class="card-body">
-                            <p class="list-item-heading mb-4">Homemade Cheesecake with Fresh Berries and Mint</p>
-                            <footer>
-                                <p class="text-muted text-small mb-0 font-weight-light">09.04.2018</p>
-                            </footer>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="card">
-                        <div class="position-relative">
-                            <img class="card-img-top" src="img/cards/thumb-1.jpg" alt="Card image cap">
-                        </div>
-                        <div class="card-body">
-                            <p class="list-item-heading mb-4">Homemade Cheesecake with Fresh Berries and Mint</p>
-                            <footer>
-                                <p class="text-muted text-small mb-0 font-weight-light">09.04.2018</p>
-                            </footer>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="card">
-                        <div class="position-relative">
-                            <img class="card-img-top" src="img/cards/thumb-1.jpg" alt="Card image cap">
-                        </div>
-                        <div class="card-body">
-                            <p class="list-item-heading mb-4">Homemade Cheesecake with Fresh Berries and Mint</p>
-                            <footer>
-                                <p class="text-muted text-small mb-0 font-weight-light">09.04.2018</p>
-                            </footer>
-                        </div>
-                    </div>
-                </div>
+                <div class="clearfix"></div>
             </div>
         </div>
     </main>
