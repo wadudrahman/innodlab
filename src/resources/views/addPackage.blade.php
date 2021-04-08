@@ -38,8 +38,8 @@
                                     <div class="col-sm-4">
                                         <input type="text" class="form-control" id="title" placeholder="title">
                                     </div>
-                                    <label for="status" class="col-sm-1 col-form-label">Status</label>
-                                    <div class="col-sm-5">
+                                    <label for="status" class="col-sm-2 col-form-label">Status</label>
+                                    <div class="col-sm-4">
                                         <div class="form-group">
                                             <select class="form-control" id="status" name="status">
                                                 <option value="">Active</option>
@@ -54,48 +54,48 @@
                                     <div class="col-sm-2"></div>
                                     <div class="col-sm-10">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                            <input class="form-check-input" type="checkbox" id="isTrailAvailable" name="isTrailAvailable">
                                             <label class="form-check-label" for="gridCheck1">Is Trail Available</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <div class="col-sm-6">
+                                    <label for="trailDaysCount" class="col-sm-2 col-form-label">Trail days count</label>
+                                    <div class="col-sm-4">
                                         <div class="form-group">
-                                            <label for="bufferTimeline">Trail days count</label>
-                                            <div class="input-group mb-3">
-                                                <input type="number" class="form-control" id="bufferTimeline"
-                                                       name="bufferTimeline" placeholder="15">
+                                            <div class="input-group mb-2">
+                                                <input type="number" class="form-control" id="trailDaysCount"
+                                                       name="trailDaysCount" placeholder="15">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">Days</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
+                                    <label for="trailDesignCount" class="col-sm-2 col-form-label">Trail Design Count</label>
+                                    <div class="col-sm-4">
                                         <div class="form-group">
-                                            <label for="timeline">Trail Design Count</label>
-                                            <div class="input-group mb-3">
-                                                <input type="number" class="form-control" id="designCount" name="designCount">
+                                            <div class="input-group mb-2">
+                                                <input type="number" class="form-control" id="trailDesignCount" name="trailDesignCount">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <div class="col-sm-6">
+                                    <label for="designCount" class="col-sm-2 col-form-label">Design Count</label>
+                                    <div class="col-sm-4">
                                         <div class="form-group">
-                                            <label for="timeline">Design Count</label>
-                                            <div class="input-group mb-3">
+                                            <div class="input-group mb-2">
                                                 <input type="number" class="form-control" id="designCount" name="designCount">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
+                                    <label for="fileStorageFor" class="col-sm-2 col-form-label">File Storage For</label>
+                                    <div class="col-sm-4">
                                         <div class="form-group">
-                                            <label for="bufferTimeline">File Storage for</label>
-                                            <div class="input-group mb-3">
-                                                <input type="number" class="form-control" id="bufferTimeline"
-                                                       name="bufferTimeline" placeholder="15">
+                                            <div class="input-group mb-2">
+                                                <input type="number" class="form-control" id="fileStorageFor"
+                                                       name="fileStorageFor" placeholder="15">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">Days</span>
                                                 </div>
@@ -107,8 +107,8 @@
                                     <div class="col-sm-2"></div>
                                     <div class="col-sm-10">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                            <label class="form-check-label" for="gridCheck1">Is Multiple Revisions
+                                            <input class="form-check-input" type="checkbox" id="multipleRevision">
+                                            <label class="form-check-label" for="multipleRevision">Is Multiple Revisions
                                                 Available</label>
                                         </div>
                                     </div>
@@ -117,8 +117,8 @@
                                     <div class="col-sm-2"></div>
                                     <div class="col-sm-10">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                            <label class="form-check-label" for="gridCheck1">Is Same Day Delivery
+                                            <input class="form-check-input" type="checkbox" id="sameDayDelivery">
+                                            <label class="form-check-label" for="sameDayDelivery">Is Same Day Delivery
                                                 Available</label>
                                         </div>
                                     </div>
@@ -127,8 +127,8 @@
                                     <div class="col-sm-2"></div>
                                     <div class="col-sm-10">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                            <label class="form-check-label" for="gridCheck1">Receive Design Via
+                                            <input class="form-check-input" type="checkbox" id="receiveDesignViaMail">
+                                            <label class="form-check-label" for="receiveDesignViaMail">Receive Design Via
                                                 Email</label>
                                         </div>
                                     </div>
@@ -137,8 +137,8 @@
                                     <div class="col-sm-2"></div>
                                     <div class="col-sm-10">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                            <label class="form-check-label" for="gridCheck1">Is Open for
+                                            <input class="form-check-input" type="checkbox" id="openForRegistration">
+                                            <label class="form-check-label" for="openForRegistration">Is Open for
                                                 Registration</label>
                                         </div>
                                     </div>
