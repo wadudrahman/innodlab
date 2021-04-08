@@ -15,13 +15,5 @@ class UserController extends Controller
         return view('addUser');
     }
 
-    public function showPackageManagementView()
-    {
-        return view('packageManagement');
-    }
 
-    public function showAddPackageView()
-    {
-        return view('addPackage');
-    }
 }
