@@ -27,9 +27,9 @@
 <script>
     //Disabling Right Click Option
     // document.addEventListener('contextmenu', event => event.preventDefault());
-    setTimeout(function () {
-        $('.alert-dismissible').fadeOut(1000);
-    }, 5000);
+    // setTimeout(function () {
+    //     $('.alert-dismissible').fadeOut(1000);
+    // }, 5000);
 </script>
 @stack('scripts')
 </body>

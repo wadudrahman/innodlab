@@ -25,6 +25,7 @@
                 </div>
 
                 <div class="col-12">
+                    @include('partials.alerts')
                     <div class="row equal-height-container">
                         <div class="col-md-12 col-lg-4 mb-4 col-item">
                             <div class="card">

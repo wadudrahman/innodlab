@@ -29,116 +29,160 @@
                     <div class="separator mb-5"></div>
                 </div>
                 <div class="col-sm-12">
+                    @include('partials.alerts')
                     <div class="card mb-4">
                         <div class="card-body">
                             <h5 class="mb-4">Add New Package</h5>
-                            <form>
+                            <form method="post" action="{{ url('/addPackage') }}">
+                                @csrf
                                 <div class="form-group row">
                                     <label for="title" class="col-sm-2 col-form-label">Title</label>
                                     <div class="col-sm-4">
-                                        <input type="text" class="form-control" id="title" placeholder="title">
+                                        <input type="text" class="form-control" id="title" name="title"
+                                               placeholder="Starter">
+                                        @error('title')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
                                     </div>
-                                    <label for="status" class="col-sm-1 col-form-label">Status</label>
-                                    <div class="col-sm-5">
-                                        <div class="form-group">
-                                            <select class="form-control" id="status" name="status">
-                                                <option value="">Active</option>
-                                                <option value="">Client</option>
-                                                <option value="">Designer</option>
-                                                <option value="">Affiliate</option>
-                                            </select>
+                                    <label for="designCount" class="col-sm-2 col-form-label">Design Count</label>
+                                    <div class="col-sm-4">
+                                        <input type="number" class="form-control" id="designCount" name="designCount"
+                                               placeholder="30">
+                                        @error('designCount')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="pricePerDesign" class="col-sm-2 col-form-label">Price Per Design</label>
+                                    <div class="col-sm-4">
+                                        <div class="input-group mb-3">
+                                            <input type="number" class="form-control" id="pricePerDesign"
+                                                   name="pricePerDesign" placeholder="15">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">BDT</span>
+                                            </div>
                                         </div>
+                                        @error('pricePerDesign')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                    <label for="iconClass" class="col-sm-2 col-form-label">Icon Class</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="iconClass" name="iconClass"
+                                               placeholder="Icon">
+                                        @error('iconClass')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-2"></div>
                                     <div class="col-sm-10">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                            <label class="form-check-label" for="gridCheck1">Is Trail Available</label>
+                                            <input class="form-check-input" type="checkbox" id="isTrailAvailable"
+                                                   name="isTrailAvailable">
+                                            <label class="form-check-label" for="isTrailAvailable" value="1">Is Trail
+                                                Available</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="bufferTimeline">Trail days count</label>
-                                            <div class="input-group mb-3">
-                                                <input type="number" class="form-control" id="bufferTimeline"
-                                                       name="bufferTimeline" placeholder="15">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text">Days</span>
-                                                </div>
+                                    <label for="trailDaysCount" class="col-sm-2 col-form-label">Trail Days Count</label>
+                                    <div class="col-sm-4">
+                                        <div class="input-group mb-3">
+                                            <input type="number" class="form-control" id="trailDaysCount"
+                                                   name="trailDaysCount" placeholder="15">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">Days</span>
                                             </div>
                                         </div>
+                                        @error('trailDaysCount')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
                                     </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="timeline">Trail Design Count</label>
-                                            <div class="input-group mb-3">
-                                                <input type="number" class="form-control" id="designCount" name="designCount">
-                                            </div>
-                                        </div>
+                                    <label for="trailDesignCount" class="col-sm-2 col-form-label">Trail Design
+                                        Count</label>
+                                    <div class="col-sm-4">
+                                        <input type="number" class="form-control" id="trailDesignCount"
+                                               name="trailDesignCount" placeholder="10">
+                                        @error('trailDesignCount')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="timeline">Design Count</label>
-                                            <div class="input-group mb-3">
-                                                <input type="number" class="form-control" id="designCount" name="designCount">
-                                            </div>
-                                        </div>
+                                    <label for="status" class="col-sm-2 col-form-label">Status</label>
+                                    <div class="col-sm-4">
+                                        <select class="form-control" id="status" name="status">
+                                            <option value="1" selected>Active</option>
+                                            <option value="0">Inactive</option>
+                                        </select>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="bufferTimeline">File Storage for</label>
-                                            <div class="input-group mb-3">
-                                                <input type="number" class="form-control" id="bufferTimeline"
-                                                       name="bufferTimeline" placeholder="15">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text">Days</span>
-                                                </div>
+                                    <label for="fileStoragePeriod" class="col-sm-2 col-form-label">File Storage
+                                        For</label>
+                                    <div class="col-sm-4">
+                                        <div class="input-group mb-3">
+                                            <input type="number" class="form-control" id="fileStoragePeriod"
+                                                   name="fileStoragePeriod" placeholder="15">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">Days</span>
                                             </div>
                                         </div>
+                                        @error('fileStoragePeriod')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-2"></div>
                                     <div class="col-sm-10">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                            <label class="form-check-label" for="gridCheck1">Is Multiple Revisions
+                                            <input class="form-check-input" type="checkbox" id="multipleRevision"
+                                                   name="multipleRevision">
+                                            <label class="form-check-label" for="multipleRevision">Is Multiple Revisions
                                                 Available</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-2"></div>
-                                    <div class="col-sm-10">
+                                    <div class="col-sm-4">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                            <label class="form-check-label" for="gridCheck1">Is Same Day Delivery
-                                                Available</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-sm-2"></div>
-                                    <div class="col-sm-10">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                            <label class="form-check-label" for="gridCheck1">Receive Design Via
+                                            <input class="form-check-input" type="checkbox" id="receiveAtEmail"
+                                                   name="receiveAtEmail">
+                                            <label class="form-check-label" for="receiveAtEmail">Receive/ Deliver Design Via
                                                 Email</label>
                                         </div>
                                     </div>
+                                    <label for="addonEmailCount" class="col-sm-2 col-form-label">Addon Email
+                                        Count</label>
+                                    <div class="col-sm-4">
+                                        <input type="number" class="form-control" id="addonEmailCount"
+                                               name="addonEmailCount" placeholder="10">
+                                        @error('addonEmailCount')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
+                                    </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-2"></div>
                                     <div class="col-sm-10">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                            <label class="form-check-label" for="gridCheck1">Is Open for
+                                            <input class="form-check-input" type="checkbox" id="sameDayDelivery"
+                                                   name="sameDayDelivery">
+                                            <label class="form-check-label" for="sameDayDelivery">Is Same Day Delivery
+                                                Available</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="openRegistration"
+                                                   name="openRegistration">
+                                            <label class="form-check-label" for="openRegistration">Is Open for
                                                 Registration</label>
                                         </div>
                                     </div>
@@ -148,11 +192,11 @@
                                         <button type="submit" class="btn btn-primary mb-0">Add Package</button>
                                     </div>
                                 </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </main>
 @endsection

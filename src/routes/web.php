@@ -1,6 +1,11 @@
 <?php
 
-use App\Http\Controllers\{AuthController, DashboardController, JobController, PaymentController, UserController};
+use App\Http\Controllers\{AuthController,
+    DashboardController,
+    JobController,
+    PackageController,
+    PaymentController,
+    UserController};
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,14 +38,14 @@ Route::get('/jobs', [JobController::class, 'showJobListView']);
 Route::get('/jobDetails', [JobController::class, 'showJobDetails']);
 Route::get('/userList', [UserController::class, 'showUserListView']);
 Route::get('/addUser', [UserController::class, 'showAddUserView']);
-Route::get('/packageManagement', [UserController::class, 'showPackageManagementView']);
-Route::get('/addPackage', [UserController::class, 'showAddPackageView']);
+
+Route::get('/packageManagement', [PackageController::class, 'showPackageManagementView']);
+Route::get('/addPackage', [PackageController::class, 'showAddPackageView']);
+Route::post('/addPackage', [PackageController::class, 'addPackage']);
+
 Route::get('/paymentManagement', [PaymentController::class, 'showPaymentManagementView']);
 Route::get('/paymentWithdraw', [PaymentController::class, 'showWithdrawPaymentView']);
 Route::get('/withdrawBoard', [PaymentController::class, 'showWithdrawBoardView']);
-
-
-
 
 Route::get('/myJobBoard', [JobController::class, 'showMyJobBoardView']);
 Route::get('/jobBoard', [JobController::class, 'showJobBoardView']);
