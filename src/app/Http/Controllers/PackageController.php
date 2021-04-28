@@ -9,7 +9,9 @@ class PackageController extends Controller
 {
     public function showPackageManagementView()
     {
-        return view('packageManagement');
+        $packages = Package::all();
+
+        return view('packageManagement', compact('packages'));
     }
 
     public function showAddPackageView()
@@ -62,10 +64,26 @@ class PackageController extends Controller
 
             return redirect()->to('/packageManagement');
         } catch (\Exception $exception) {
-            session()->flash('danger_message', __('Package Add Failed.' . $exception->getMessage()));
+            session()->flash('danger_message', __('Package Add Failed.'));
 
             return redirect()->back();
         }
+    }
+
+    public function deletePackage($packageId)
+    {
+        if ($packageId > 0) {
+            try {
+                Package::find($packageId)->delete();
+                session()->flash('success_message', __('Package Deleted Successfully.'));
+            } catch (\Exception $exception) {
+                session()->flash('danger_message', __('Package Not Found'));
+            }
+        } else {
+            session()->flash('warning_message', __('Invalid Request.'));
+        }
+
+        return redirect()->back();
     }
 
 }

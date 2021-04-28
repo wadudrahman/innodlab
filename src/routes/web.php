@@ -42,6 +42,9 @@ Route::get('/addUser', [UserController::class, 'showAddUserView']);
 Route::get('/packageManagement', [PackageController::class, 'showPackageManagementView']);
 Route::get('/addPackage', [PackageController::class, 'showAddPackageView']);
 Route::post('/addPackage', [PackageController::class, 'addPackage']);
+Route::get('/editPackage', [PackageController::class, 'showEditPackageView']);
+Route::post('/editPackage', [PackageController::class, 'editPackage']);
+Route::get('/deletePackage/{packageId}', [PackageController::class, 'deletePackage']);
 
 Route::get('/paymentManagement', [PaymentController::class, 'showPaymentManagementView']);
 Route::get('/paymentWithdraw', [PaymentController::class, 'showWithdrawPaymentView']);
